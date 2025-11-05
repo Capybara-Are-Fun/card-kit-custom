@@ -87,22 +87,26 @@ enum DrawDirections {
 }
 
 cardCursor.setImage(img`
-. . . f f . . . .
-. . f 1 1 f . . .
-. . f 1 1 f . . .
-. . f 1 1 f f . .
-. f f 1 1 b b f .
-f 1 f 1 1 d d d f
-f 1 d 1 1 1 1 1 f
-. f d 1 1 1 1 1 f
-. . f d 1 1 1 d f
-. . . f f f f f .
+. . . c c 
+. . c 5 5 c 
+. . c 5 5 c 
+. . c 5 5 c c
+. c c 5 5 5 5 c 
+c 4 c 5 5 5 5 5 c 
+c 4 4 5 5 5 5 5 c 
+. c b 4 4 4 4 4 c 
+. . c b b b b b c 
+. . . c c c c c 
+`)
+
 `)
 
 //% color="#307d9c" icon="\uf2bb" block="Card Design"
 //% advanced="true"
 namespace cardDesign {
 
+
+    
     const DEFAULT_CARD_FRONT = img`
     . c c c c .
     c b 1 1 b c
